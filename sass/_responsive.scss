@@ -33,4 +33,35 @@ svg:not(:root) {
     width: 100%;
     height: auto;
   }
+
+footer[role="contentinfo"] {
+
+  padding: 2em;
+
+  .buttons {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li:first-child {width: 80px; }
+        li:nth-child(2) { width: 100px;}
+        li:nth-child(3) { width: 80px;}
+        li:nth-child(4) { width: 100%; text-align: center;}
+        li {
+          display: inline-block;
+          position: relative;
+          text-align: left;
+          a.dribbble {
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            top: 1em;
+            left: 0;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
 }
