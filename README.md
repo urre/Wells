@@ -1,6 +1,5 @@
 #Wells
 - - -
 
-Just a couple of nice Wells. Created using Compass/SASS.
+Just a couple of nice [Wells](http://urre.me/wells "Wells"). Created using Compass/SASS.
 
-[Wells](http://urre.me/wells "Wells")
