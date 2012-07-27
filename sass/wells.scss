@@ -1,6 +1,9 @@
 /* Debugging */
 $DEBUG: false;
 
+/* Normalize */
+@import "normalize";
+
 /* Boilerplate */
 @import "plate";
 
@@ -14,4 +17,4 @@ $DEBUG: false;
 @import "main";
 
 /* Responsive */
-@import "Responsive";
+@import "responsive";
