@@ -1,0 +1,71 @@
+@import "compass/css3";
+
+$legacy-support-for-ie7      :    true;
+$experimental-support-for-svg:  true;
+
+/* Colors */
+$profile: #BFDFDF;
+$white  : #fff;
+$black  : #000;
+
+/* Text selection */
+::-moz-selection {background: $profile; color: $white; text-shadow: none}
+::selection {background: $profile; color: $white; text-shadow: none}
+
+$helvetica : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+
+html {
+  height                  : 100%;
+  font-size               : 100%;
+  overflow-y              : scroll;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin               : 0;
+  min-height           : 100%;
+  webkit-font-smoothing: antialiased;
+  //text-rendering: optimizeLegibility;
+}
+
+$rounded_default: 5px;
+
+@mixin rounded($amount: $rounded_default) {
+    -moz-border-radius   : $amount;
+    -webkit-border-radius: $amount;
+    -khtml-border-radius : $amount;
+    -o-border-radius     : $amount;
+    border-radius        : $amount;
+}
+
+@mixin linkeffect($type, $timing, $ease) {
+  -webkit-transition: $type $timing $ease;
+  -moz-transition   : $type $timing $ease;
+  -o-transition     : $type $timing $ease;
+  -ms-transition    : $type $timing $ease;
+  transition        : $type $timing $ease;
+}
+
+@mixin gradient($from, $to) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient($from, $to);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient($from, $to);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient($from, $to);
+}
+
+/* & */
+.amp {
+  font: {
+    family: Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+    size: 110%;
+    style: italic;
+    weight: normal;
+  }
+}

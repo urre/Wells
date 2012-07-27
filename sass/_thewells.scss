@@ -1,0 +1,115 @@
+.well {
+  width: 30%;
+  margin: 0 0 2em 2%;
+  display: inline-block;
+  padding: 1.8em 1.4em 1.2em 1.8em;
+  color: #4B5C66;
+  min-height: 20em;
+  font: {
+    size: .9em;
+  }
+}
+
+.well1 {
+  @extends .well;
+  @include rounded(5px);
+  border: 1px solid #DBE1E4;
+  @include box-shadow(rgba(0, 0, 0, 0.4) 0 1px 1px 0);
+}
+
+.well2 {
+  @extends .well;
+  @include rounded(6px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.well3 {
+  @extends .well;
+  color: #007AC7;
+  border: 1px solid #DCDFE2;
+  @include rounded(4px);
+  background-color: $white;
+  @include gradient($white, #FBFBFB);
+}
+
+.well4 {
+  @extends .well;
+  border: 1px solid #CCC;
+  background-color: $white;
+  @include rounded(2px);
+}
+
+.well5 {
+  @extends .well;
+  background-color: whiteSmoke;
+  @include rounded(5px);
+  @include box-shadow(rgba(0, 0, 0, 0.25) 0 1px 3px 0, $white 0 1px 0 inset);
+}
+
+.well6{
+  @extends .well;
+  @include rounded(3px);
+  border: 1px solid #D9D9D9;
+  @include box-shadow(rgba(0, 0, 0, 0.1) 0 1px 2px 0 inset);
+}
+
+.well7 {
+  @extends .well;
+  border: 1px solid lighten(#CCC, 8%);
+  @include rounded(.25em);
+  background-color: $white;
+  @include box-shadow(#ccc 0 .333em 0 0);
+}
+
+.well8 {
+  border: 4px solid darken(#EAEDEE, 4%);
+  @extends .well;
+  @include rounded(14px);
+}
+
+.well9 {
+  @extends .well;
+  background-color: $white;
+  border-left: 4px solid lighten($black, 80%);
+}
+
+.well10 {
+  @extends .well;
+  @include rounded(12px);
+  @include box-shadow(rgba(0, 0, 0, 0.15) 0 2px 5px 2px inset);
+}
+
+.well11 {
+  @extends .well;
+  background-color: $white;
+  border-top: 4px solid lighten($black, 80%);
+  border-bottom: 4px solid lighten($black, 60%);
+}
+
+.well12 {
+  @extends .well;
+  background-color: $white;
+  border-top: 2px solid lighten($black, 50%);
+  color: darken($profile, 20%);
+}
+
+.well13 {
+  @extends .well;
+  background-color: lighten(#FFC, 1%);
+  @include box-shadow(rgba(0, 0, 0, 0.3) 0 0 10px 0);
+  color: lighten($black, 10%);
+}
+
+.well14 {
+  @extends .well;
+  background: url(http://basehold.it/i/24/0099ff) $white;
+  @include box-shadow(rgba(0, 0, 0, 0.3) 0 0 10px 0);
+  color: lighten($black, 10%);
+}
+
+.well15 {
+  @extends .well;
+  border: 1px solid lighten($black, 90%);
+  background-color: $white;
+  @include box-shadow(#FBFBFC 10px 0 0 0 inset, #ECECF0 11px 0 0 0 inset);
+}

@@ -1,0 +1,63 @@
+/* Hide loading headings */
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading h5 {
+    opacity: 0;
+}
+
+/* Hide for old IE */
+.ie.wf-loading h1,
+.ie.wf-loading h2,
+.ie.wf-loading h3,
+.ie.wf-loading h4,
+.ie.wf-loading h5 {
+    visibility: hidden;
+}
+
+/* Fade in headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    opacity: 1;
+    visibility: visible; /* Old IE */
+    -webkit-transition: opacity 0.24s ease-in-out;
+       -moz-transition: opacity 0.24s ease-in-out;
+            transition: opacity 0.24s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font: {
+    family: $ptsans;
+  }
+  line-height: 1em;
+  margin: 0.4em 0 0.3em 0;
+  color: lighten($black, 30%);
+  /* letter-spacing: -0.01em; */
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 2em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1em; }
+h5 { font-size: .95em; }
+
+p {
+  margin: 1em 0 2em 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: .5em;
+  padding: 0 2em 0 0;
+  letter-spacing: -0.01em;
+  color: lighten($black, 20%);
+  font: {
+    family: $ptsans;
+    weight: 400;
+  }
+}
