@@ -117,6 +117,43 @@ a.btn {
   }
 }
 
+.buttons {
+  position: relative;
+  width: 20em;
+  margin: 0 auto;
+}
+
+a.dribbble {
+  border: 1px solid lighten(#CCC, 8%);
+  @include rounded(.25em);
+  background-color: $white;
+  @include box-shadow(#ccc 0 .15em 0 0);
+
+  padding: .2em .6em .2em .6em;
+  font: {
+    size: .7em;
+  }
+  color: #EA4C88;
+  position: absolute;
+  right: -.6em;
+  top: 0;
+
+  @include linkeffect(background-color, 0.2s, ease-out);
+  &:hover {
+    border: 1px solid darken(#EA4C88, 8%);
+    background-color: #EA4C88;
+    color: $white;
+    box-shadow: none;
+  }
+  &:active,
+  &:focus {
+    border: 1px solid darken(#EA4C88, 28%);
+    background-color: darken(#EA4C88, 20%);
+    color: $white;
+    box-shadow: none;
+  }
+}
+
 /* Animations */
 @-webkit-keyframes logodown {
   0%   { opacity:0;  margin-left: -7em; }
