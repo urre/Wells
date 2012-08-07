@@ -3,5 +3,5 @@
 #Wells & Boxes
 - - -
 
-Just a couple of wells & boxes [Wells](http://labs.urre.me/wells "Wells"). Created using Compass/SASS.
+Just a couple of [Wells & Boxes](http://labs.urre.me/wells "Wells"). Created using Compass/SASS.
 
