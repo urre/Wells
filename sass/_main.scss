@@ -96,23 +96,46 @@ a.btn {
 
   @include rounded(.25em);
   border: 0;
-  background-color: darken($profile, 8%);
+  background-color: darken($profile, 24%);
+  box-shadow: 0em 0.333em 0em darken($profile, 56%);
   color: $white;
 
   @include linkeffect(background-color, 0.2s, ease-out);
-  box-shadow: 0em 0.333em 0em darken($profile, 16%);
+
 
   &:hover {
-    background-color: darken($profile, 14%);
-    box-shadow: 0em 0.333em 0em darken($profile, 26%);
+    background-color: darken($profile, 34%);
+    box-shadow: 0em 0.333em 0em darken($profile, 66%);
+    color: $white;
   }
   &:focus,
   &:active {
-    background-color: darken($profile, 34%);
+    background-color: darken($profile, 44%);
     box-shadow: none;
     color: $white;
   }
 }
+
+/* Copy CSS link */
+ul.links {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  list-style: none;
+  li {
+    margin: 0;
+    float: right;
+    a {
+      height: 2em;
+      padding: .4em 0 3em 0;
+      font-size: .8em;
+      cursor: pointer;
+      clear: both;
+    }
+  }
+}
+
 
 footer[role="contentinfo"] {
 
