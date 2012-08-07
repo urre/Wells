@@ -32,12 +32,6 @@ svg:not(:root) {
     margin: 0 auto;
   }
 
-  .well {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-
   footer[role="contentinfo"] {
 
     padding: 2em;
@@ -47,4 +41,14 @@ svg:not(:root) {
     }
 
   }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .well {
+    float: none;
+    width: 100%;
+    min-height: auto;
+  }
+
 }
