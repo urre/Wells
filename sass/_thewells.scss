@@ -75,13 +75,8 @@
 
 .well8 {
   @extends .well;
-
-border-radius: 8px;
--moz-border-radius: 8px;
--webkit-border-radius: 8px;
-box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.5);
--moz-box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.5);
--webkit-box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.5);
+  @include rounded(8px);
+  @include box-shadow(rgba(50, 50, 50, 0.5) 0 1px 2px 0 inset);
 
 }
 
@@ -154,5 +149,53 @@ box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.5);
   @include rounded(4px);
   @include box-shadow(whiteSmoke 0 0 0 4px inset, rgba(10, 10, 0, .3) 2px 1px 4px 4px inset);
   text-shadow: -1px -1px whiteSmoke;
+}
 
+.well19 {
+  @extends .well;
+  text-shadow: 0 1px white;
+  border: 1px solid;
+  border-color: #cfcfcf #d6d6d6 #c8c8c8;
+  @include linear-gradient(color-stops(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.25) 100%), left top, left bottom);
+  @include box-shadow(white 0 1px 0 0 inset, rgba(255, 255, 255, .7) 0 0 0 1px inset, #dadada 0 2px 0 0, #c4c4c4 0 3px 0 0, rgba(0,0,0,0.1) 0 4px 3px 0);
+}
+
+.well20 {
+  @extends .well;
+  position: relative;
+  padding-left: 3em;
+  border: 1px solid #c3baaa;
+  border-color: rgba(195, 186, 170, 0.9);
+  text-shadow: 0 1px 1px white;
+  background-color: #f2f6c1;
+
+  // SASS-ify this later */
+  background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -moz-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+
+  @include box-shadow(white 0 1px 0 0 inset, rgba(255, 255, 255, .7) 0 0 0 1px inset, #dadada 0 2px 0 0, #c4c4c4 0 3px 0 0, rgba(0,0,0,0.1) 0 4px 3px 0);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 28px;
+    width: 2px;
+    border: solid #efcfad;
+    border-color: rgba(239, 207, 173, 0.9);
+    border-width: 0 1px;
+  }
+}
+
+.well21 {
+  @extends .well;
+  background-color  : rgb(248, 248, 248);
+  text-shadow       : 0 1px rgb(252, 252, 252);
+  border            : 1px solid;
+  border-color      : rgb(218, 218, 218) rgb(213, 213, 213) rgb(207, 207, 207);
+  border-radius     : 3px;
+
+  @include box-shadow(rgb(252, 252, 252) 0 0 0 1px inset, rgba(0, 0, 0, 0.05) 0 1px 2px 0);
 }
