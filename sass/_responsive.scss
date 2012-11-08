@@ -23,6 +23,10 @@ svg:not(:root) {
 
 @media screen and (max-width: 1200px) {
 
+  .well {
+    height: 30em;
+  }
+
   [role="header"] h1 {
     font-size: 1.8em;
   }
@@ -49,6 +53,18 @@ svg:not(:root) {
     float: none;
     width: 100%;
     min-height: auto;
+    height: 14em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .well {
+    float: none;
+    width: 100%;
+    min-height: auto;
+    height: auto;
   }
 
 }

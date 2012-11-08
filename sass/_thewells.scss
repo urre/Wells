@@ -5,6 +5,7 @@
   padding: 1.8em 1.4em 1.2em 1.8em;
   color: #4B5C66;
   max-height: 30em;
+  height: 20em;
   font: {
     size: .9em;
   }
@@ -15,10 +16,12 @@
     top: 1.5em;
     @include rounded(.2em);
     background-color: rgba(#7AB317, .8);
+    text-shadow: none;
     text-align: center;
     font-size: 1em;
     color: white;
     padding: .4em .7em .4em .7em;
+    z-index: 10;
   }
 }
 
@@ -145,7 +148,6 @@
 .well18 {
   @extends .well;
   background: whiteSmoke;
-  border: 2px dotted lighten($black, 80%);
   @include rounded(4px);
   @include box-shadow(whiteSmoke 0 0 0 4px inset, rgba(10, 10, 0, .3) 2px 1px 4px 4px inset);
   text-shadow: -1px -1px whiteSmoke;
@@ -163,7 +165,7 @@
 .well20 {
   @extends .well;
   position: relative;
-  padding-left: 3em;
+
   border: 1px solid #c3baaa;
   border-color: rgba(195, 186, 170, 0.9);
   text-shadow: 0 1px 1px white;
@@ -181,7 +183,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 28px;
+    left: 13px;
     width: 2px;
     border: solid #efcfad;
     border-color: rgba(239, 207, 173, 0.9);
@@ -195,10 +197,73 @@
   text-shadow       : 0 1px rgb(252, 252, 252);
   border            : 1px solid;
   border-color      : rgb(218, 218, 218) rgb(213, 213, 213) rgb(207, 207, 207);
-  border-radius     : 3px;
-
+  @include rounded(3px);
   @include box-shadow(rgb(252, 252, 252) 0 0 0 1px inset, rgba(0, 0, 0, 0.05) 0 1px 2px 0);
 }
 
 
+.well22 {
+  @extend .well;
 
+  @include rounded(3px);
+  //@include box-shadow(rgb(252, 252, 252) 0 0 0 1px inset, rgba(0, 0, 0, 0.05) 0 1px 2px 0);
+  background-color: white;
+
+
+  -moz-box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+
+  .sidebox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url('http://subtlepatterns.com/patterns/subtle_stripes.png');
+
+    border: none;
+    border-left: 2px solid lighten(rgb(56, 189, 189), 7%);
+    color: white;
+
+    border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+
+  }
+
+}
+
+.well23 {
+  @extend .well;
+
+  background-color: rgb(254, 254, 230);
+  border: rgb(227, 227, 174) 1px solid;
+  color: rgb(136, 131, 77);
+
+  @include rounded(3px);
+  -moz-box-shadow: 0 1px 1px #ddd;
+  -webkit-box-shadow: 0 1px 1px rgb(221, 221, 221);
+  box-shadow: 0 1px 1px rgb(221, 221, 221);
+
+  @include box-shadow(darken(rgb(254, 254, 230), 80%)  -1px -1px 3px 0 inset);
+
+}
+
+.well24 {
+  @extend .well;
+
+  @include box-shadow(rgba(0, 0, 0, 0.15) 0 1px 1px 0 inset, white 0 1px 0);
+
+  -webkit-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip   : padding;
+  -moz-background-clip   : padding-box;
+
+  @include rounded(4px);
+
+  background-clip        : padding-box;
+  background             : rgb(238, 238, 238);
+  background             : rgba(0, 0, 0, 0.05);
+}
