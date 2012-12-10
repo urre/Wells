@@ -23,12 +23,25 @@ body {
   h1 {
     font-size: 2em;
     margin: 1em 0;
-    -webkit-animation :logodown 1.4s ease;
-    a {
+    a, a:visited, a:active, a:hover {
       color: lighten($black, 30%);
     }
   }
   text-transform: uppercase;
+}
+
+[role="header"] h1 {
+  -webkit-animation-duration       : .7s;
+  -webkit-animation-delay          : 1s;
+  -webkit-animation-iteration-count: 1; //infinite;
+
+  -moz-animation-duration          : .7s;
+  -moz-animation-delay             : 1s;
+  -moz-animation-iteration-count   : 1; //infinite;
+
+  -o-animation-duration            : 0.7s;
+  -o-animation-delay               : 1s;
+  -o-animation-iteration-count     : 1; //infinite;
 }
 
 [role="main"] {
@@ -169,6 +182,7 @@ footer[role="contentinfo"] {
     position: absolute;
     right: 6em;
     top: -20px;
+    width: 90px;
 
     display: inline-block;
 
@@ -187,11 +201,4 @@ footer[role="contentinfo"] {
       box-shadow: none;
     }
   }
-}
-
-/* Animations */
-@-webkit-keyframes logodown {
-  0%   { opacity:0;  margin-left: -7em; }
-  40%  { opacity:0; margin-left: -7em; }
-  100% { opacity:1; }
 }
