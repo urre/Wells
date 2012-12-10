@@ -1,5 +1,4 @@
 @import "compass/css3";
-@import "compass/css3/gradient";
 
 $legacy-support-for-ie7      :    true;
 $experimental-support-for-svg:  true;
@@ -26,16 +25,15 @@ html {
 body {
   margin               : 0;
   min-height           : 100%;
-  webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   //text-rendering: optimizeLegibility;
 }
 
 $rounded_default: 5px;
 
 @mixin rounded($amount: $rounded_default) {
-    -moz-border-radius   : $amount;
     -webkit-border-radius: $amount;
-    -khtml-border-radius : $amount;
+    -moz-border-radius   : $amount;
     -o-border-radius     : $amount;
     border-radius        : $amount;
 }
