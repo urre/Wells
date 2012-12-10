@@ -26,20 +26,20 @@
 }
 
 .well1 {
-  @extends .well;
+  @extend .well;
   @include rounded(5px);
   border: 1px solid #DBE1E4;
   @include box-shadow(rgba(0, 0, 0, 0.4) 0 1px 1px 0);
 }
 
 .well2 {
-  @extends .well;
+  @extend .well;
   @include rounded(6px);
   box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
 
 .well3 {
-  @extends .well;
+  @extend .well;
   color: #007AC7;
   border: 1px solid #DCDFE2;
   @include rounded(4px);
@@ -48,28 +48,28 @@
 }
 
 .well4 {
-  @extends .well;
+  @extend .well;
   border: 1px solid #CCC;
   background-color: $white;
   @include rounded(2px);
 }
 
 .well5 {
-  @extends .well;
+  @extend .well;
   background-color: whiteSmoke;
   @include rounded(5px);
   @include box-shadow(rgba(0, 0, 0, 0.25) 0 1px 3px 0, $white 0 1px 0 inset);
 }
 
 .well6{
-  @extends .well;
+  @extend .well;
   @include rounded(3px);
   border: 1px solid #D9D9D9;
   @include box-shadow(rgba(0, 0, 0, 0.1) 0 1px 2px 0 inset);
 }
 
 .well7 {
-  @extends .well;
+  @extend .well;
   border: 1px solid lighten(#CCC, 8%);
   @include rounded(.25em);
   background-color: $white;
@@ -77,67 +77,79 @@
 }
 
 .well8 {
-  @extends .well;
-  @include rounded(8px);
+  @extend .well;
+  @include rounded(3px);
   @include box-shadow(rgba(50, 50, 50, 0.5) 0 1px 2px 0 inset);
 
 }
 
 .well9 {
-  @extends .well;
+  @extend .well;
   background-color: $white;
-  border-left: 4px solid lighten($black, 80%);
+  border-left: 4px solid $profile;
 }
 
 .well10 {
-  @extends .well;
-  @include rounded(12px);
-  @include box-shadow(rgba(0, 0, 0, 0.15) 0 2px 5px 2px inset);
+  @extend .well;
+  @include rounded(3px);
+  @include box-shadow(rgba(0, 0, 0, 0.15) 0 1px 1px 1px inset);
 }
 
 .well11 {
-  @extends .well;
+  @extend .well;
   background-color: white;
   background-image: url(http://basehold.it/i/74/ff0000);
 
 }
 
 .well12 {
-  @extends .well;
+  @extend .well;
   box-shadow: 1px 1px 5px rgb(140, 140, 140);
   background-color: white;
 }
 
 .well13 {
-  @extends .well;
-  background-color: lighten(#FFC, 1%);
-  @include box-shadow(rgba(0, 0, 0, 0.3) 0 0 10px 0);
-  color: lighten($black, 10%);
+  @extend .well;
+  background-color: white;
+  border: 1px solid $profile;
+
+    &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    border: dotted #efcfad;
+    border-color: $profile;
+    border-width: 1px 0px;
+  }
+
 }
 
 .well14 {
-  @extends .well;
+  @extend .well;
   background: url(http://basehold.it/i/24/0099ff) $white;
   @include box-shadow(rgba(0, 0, 0, 0.3) 0 0 10px 0);
   color: lighten($black, 10%);
 }
 
 .well15 {
-  @extends .well;
+  @extend .well;
   border: 1px solid lighten($black, 90%);
   background-color: $white;
   @include box-shadow(#FBFBFC 10px 0 0 0 inset, #ECECF0 11px 0 0 0 inset);
 }
 
 .well16 {
-  @extends .well;
+  @extend .well;
   background-image: url(../img/stripes.png);
   @include box-shadow(rgba(136, 136, 136, .7) 0 0 3px 1px inset);
-  @include rounded(5px);
+  @include rounded(2px);
 }
 
 .well17 {
-  @extends .well;
+  @extend .well;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
   background: rgba(0, 0, 0, 0.04);
@@ -146,35 +158,35 @@
 }
 
 .well18 {
-  @extends .well;
+  @extend .well;
   background: whiteSmoke;
   @include rounded(4px);
-  @include box-shadow(whiteSmoke 0 0 0 4px inset, rgba(10, 10, 0, .3) 2px 1px 4px 4px inset);
+  @include box-shadow(whiteSmoke 0 0 0 4px inset, rgba(10, 10, 0, .3) 2px 1px 3px 3px inset);
   text-shadow: -1px -1px whiteSmoke;
 }
 
 .well19 {
-  @extends .well;
+  @extend .well;
   text-shadow: 0 1px white;
   border: 1px solid;
   border-color: #cfcfcf #d6d6d6 #c8c8c8;
-  @include linear-gradient(color-stops(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.25) 100%), left top, left bottom);
+  @include background-image(linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.25) 100%), left top, left bottom);
   @include box-shadow(white 0 1px 0 0 inset, rgba(255, 255, 255, .7) 0 0 0 1px inset, #dadada 0 2px 0 0, #c4c4c4 0 3px 0 0, rgba(0,0,0,0.1) 0 4px 3px 0);
 }
 
 .well20 {
-  @extends .well;
+  @extend .well;
   position: relative;
 
   border: 1px solid #c3baaa;
-  border-color: rgba(195, 186, 170, 0.9);
+  border-color: rgba(black, 0.1);
   text-shadow: 0 1px 1px white;
-  background-color: #f2f6c1;
+  background-color: lighten(#f2f6c1, 16%);
 
   // SASS-ify this later */
-  background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
-  background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -moz-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
-  background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(33, 33, 33, 0.1) 29px, rgba(33, 33, 33, 0.1) 30px);
+  background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -moz-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(33, 33, 33, 0.1) 29px, rgba(33, 33, 33, 0.1) 30px);
+  background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(33, 33, 33, 0.1) 29px, rgba(33, 33, 33, 0.1) 30px);
 
   @include box-shadow(white 0 1px 0 0 inset, rgba(255, 255, 255, .7) 0 0 0 1px inset, #dadada 0 2px 0 0, #c4c4c4 0 3px 0 0, rgba(0,0,0,0.1) 0 4px 3px 0);
 
@@ -185,14 +197,13 @@
     bottom: 0;
     left: 13px;
     width: 2px;
-    border: solid #efcfad;
-    border-color: rgba(239, 207, 173, 0.9);
+    border: solid rgba($profile, 0.9);
     border-width: 0 1px;
   }
 }
 
 .well21 {
-  @extends .well;
+  @extend .well;
   background-color  : rgb(248, 248, 248);
   text-shadow       : 0 1px rgb(252, 252, 252);
   border            : 1px solid;
@@ -203,55 +214,6 @@
 
 
 .well22 {
-  @extend .well;
-
-  @include rounded(3px);
-  //@include box-shadow(rgb(252, 252, 252) 0 0 0 1px inset, rgba(0, 0, 0, 0.05) 0 1px 2px 0);
-  background-color: white;
-
-
-  -moz-box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
-
-  .sidebox {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 60px;
-    overflow: hidden;
-    text-indent: -9999px;
-    background: url('http://subtlepatterns.com/patterns/subtle_stripes.png');
-
-    border: none;
-    border-left: 2px solid lighten(rgb(56, 189, 189), 7%);
-    color: white;
-
-    border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-
-  }
-
-}
-
-.well23 {
-  @extend .well;
-
-  background-color: rgb(254, 254, 230);
-  border: rgb(227, 227, 174) 1px solid;
-  color: rgb(136, 131, 77);
-
-  @include rounded(3px);
-  -moz-box-shadow: 0 1px 1px #ddd;
-  -webkit-box-shadow: 0 1px 1px rgb(221, 221, 221);
-  box-shadow: 0 1px 1px rgb(221, 221, 221);
-
-  @include box-shadow(darken(rgb(254, 254, 230), 80%)  -1px -1px 3px 0 inset);
-
-}
-
-.well24 {
   @extend .well;
 
   @include box-shadow(rgba(0, 0, 0, 0.15) 0 1px 1px 0 inset, white 0 1px 0);
