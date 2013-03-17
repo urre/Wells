@@ -1,10 +1,11 @@
 @import "compass/css3";
+@import "http://fonts.googleapis.com/css?family=Signika:400,600";
 
 $legacy-support-for-ie7      :    true;
 $experimental-support-for-svg:  true;
 
 /* Colors */
-$profile: lighten(#D82C3D, 20%);
+$profile: lighten(#2E997B, 0%);
 $white  : #fff;
 $black  : #000;
 
@@ -13,7 +14,7 @@ $black  : #000;
 ::selection {background: $profile; color: $white; text-shadow: none}
 
 $helvetica : "Helvetica Neue", Helvetica, Arial, sans-serif;
-$ptsans: 'PT Sans', sans-serif;
+$signifika: 'Signika', sans-serif;
 
 html {
   height                  : 100%;
