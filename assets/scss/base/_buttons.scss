@@ -1,0 +1,54 @@
+a.button {
+    transition: all 200ms, ease-in-out;
+    background: transparent;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 1em 2em;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-size-adjust:none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    user-select:none;
+    border-radius: 70px;
+    &:hover {
+        background: white;
+        color: $gulpsetup;
+    }
+    &:active,
+    &:focus {
+        background: white;
+        color: $gulpsetup;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+    i {
+        display: inline-block;
+        margin-right: .6em;
+    }
+}
+
+
+/*-------------------------------------------------------------------
+Sizes
+-------------------------------------------------------------------*/
+
+.button--small {
+    font-size: .7em;
+}
+
+.button--medium {
+    font-size: 1.3em;
+}
+
+.button--large {
+    font-size: 1.6em;
+}
+
+.button--huge {
+    font-size: 2.2em;
+}

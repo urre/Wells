@@ -1,0 +1,32 @@
+* {
+    &,
+    &:before,
+    &:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+    font-weight: normal;
+    background: linear-gradient(450deg, #263269 0%, #22b1b5 100%) rgb(222, 222, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 80em;
+    padding-left: 1em;
+    padding-right: 1em;
+}

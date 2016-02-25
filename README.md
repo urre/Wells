@@ -1,7 +1,8 @@
 ![Screenshot](https://dl.dropbox.com/u/1162759/wells.png)
 
-#Wells & Boxes
+# Wells & Boxes
 - - -
 
-Just a couple of [Wells & Boxes](http://wellsandboxes.com "Wells"). Created using Compass/SASS.
+Just a couple of [Wells & Boxes](http://wells.surge.sh/)
+Created using Compass/SASS.
 

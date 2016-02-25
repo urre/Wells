@@ -1,0 +1,94 @@
+
+/*-------------------------------------------------------------------
+Demo page
+-------------------------------------------------------------------*/
+main h1 {
+	color: white;
+}
+
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 3em 0;
+	margin-left: 0;
+	border-top: 1px solid lighten(black, 97%);
+	counter-reset: numbercounter;
+	text-align: left;
+
+	a {
+		color: white;
+		border-bottom: 1px solid white;
+		&:visited,
+		&:active,
+		&:focus {
+			color: white;
+			&:hover {
+				color: white;
+			}
+		}
+		&:hover {
+			color: white;
+		}
+	}
+
+	li {
+		display: list-item;
+		color: white;
+		line-height: 1.8;
+		list-style: none;
+		border-bottom: 1px solid lighten(black, 97%);
+		padding: 1em 1em 1em 2em;
+		font: {
+			size: 1em;
+		}
+
+		@media #{$breakpoint-md} {
+			&:before {
+				content: counter(numbercounter);
+				counter-increment: numbercounter;
+				display: block;
+				margin-left: -2em;
+				padding: 0 2em;
+				float: left;
+			}
+		}
+	}
+}
+
+pre {
+	background: #333;
+	color: white;
+	padding: 0;
+	font-family: Menlo, Monaco, monospace;
+	font-size: .9rem;
+	tab-size: 2;
+	word-break: normal;
+	word-break: normal;
+	hyphens: none;
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: .5rem 1.5rem;
+	margin-top: 2rm;
+
+	@media #{$breakpoint-md} {
+		font-size: 1.2rem;
+		padding: 1rem 2rem;
+		margin-top: 3rem;
+	}
+
+	code {
+		margin: 0;
+		padding: 0
+	}
+}
+
+.footer a {
+	color: white;
+	&:visited,
+	&:active,
+	&:focus {
+		color: white;
+	}
+}
